@@ -3,11 +3,9 @@ package stringutils
 import (
 	"fmt"
 
-	"github.com/Helcaraxan/modularise-example-stringutils/internal/random"
+	"github.com/Helcaraxan/modularise-example-stringutils/v2/internal/random"
 )
 
-const randomStringLenght = 20
-
-func PrintRandomString() {
-	fmt.Println(random.GenerateRandomString(randomStringLenght))
+func PrintRandomString(stringLenght int) {
+	fmt.Println(random.GenerateRandomString(stringLenght))
 }
